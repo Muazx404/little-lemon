@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Our Menu">
+    <meta property="og:type"  content="website">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url"   content="https://littlelemon/">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Little Lemon">
+    <title>Booking</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="booking.html">Booking</a>
+            </li>
+            <li>
+                <a href="registration.html">registration</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        
+        <h1>Booking a table</h1>
+        <form action="">
+            <fieldset id="date">
+                <label for="date_of_booking" id="date_of_booking">Date of booking</label>
+                <input type="date" id="date_of_booking" name="date_of_booking">
+            </fieldset>
+            <fieldset id="size">
+                <input type="radio" value="2" name="size">2-person table
+                <input type="radio" value="4" name="size" checked>4-person table
+                <input type="radio" value="6" name="size">6-person table
+            </fieldset>
+            <fieldset id="location"> 
+                <input type="radio" value="indoor" name="location" checked> indoor table
+                <input type="radio" value="outdoor" name="location"> outdoor table
+            </fieldset>
+            <button type="submit">submit</button>
+        </form>
+
+         
+         <!--
+ <h1>Booking a talble</h1>
+        <form action="POST">
+            <div>
+                <label for="date_of_booking" id="date_of_booking">Date of booking</label>
+                <input type="date" id="date_of_booking" name="date_of_booking">
+            </div>
+            <div>
+                <label for="booking_people" id="booking_people">Booking people</label>
+                <input type="range" id="booking_people" name="booking_people" min="1" max="10"  oninput="this.nextElementsibling.value=this.value">
+                <output>4</output>
+            </div>
+            <div>
+                <label for="booking_location" id="booking_location">Booking location</label>
+                <input id="booking_location" name="booking_location" list="locations">
+                <datalist id="locations">
+                    <option value="downtown"></option>
+                    <option value="uptown"></option>
+                </datalist>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+         -->
+        
+    </main>
+    <hr>
+    <footer>
+        <div class="footer-logo">
+        <img src="images/Asset 20@4x.png" alt="logo" id="footer-logo">
+        </div>
+        <div class="copyright">
+            &copy;2024
+        </div>
+    </footer>
+   
+</body>
+</html>
